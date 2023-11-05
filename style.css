@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: Mulish;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+    border-radius: 4px;
+}
+
+.container {
+    /* border: 2px solid red; */
+    width: min(112rem, 100%);
+    margin: 0 auto;
+    /* padding: 3.1rem 2.8rem 1.2rem; */
+    padding: 0 3.1rem;
+}
+
+.container main {
+    padding-top: 2.8rem;
+}
+
+.container h2:nth-child(1) {
+    padding-top: 3.2rem;
+}
+
+header > * {
+    margin: 1.2rem 0;
+}
+
+header {
+    display: flex;
+    gap: 2.5rem;
+    background: #065E7C;
+    padding-bottom: 1.2rem;
+} 
+
+header form {
+    flex:1;
+}
+
+header #foot {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header form input {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.20);
+    border-style: none;
+    color: #FFF;
+    font-weight: 600;
+    padding: 1.4rem 1.2rem;
+    font-family: Mulish;
+}
+
+header form input::placeholder {
+    color: #FFF;
+    font-weight: 600;
+    font-family: Mulish;
+}
+
+main {
+    overflow-y: scroll;
+}
+
+.container .avatar {
+    width: 4.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+.painel {
+    width: 100%;
+    border-radius: 0 0 4px 4px ;
+}
+
+.container h2:nth-child(4) {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; 
+    padding: 3.2rem 0;
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.8rem 0 3.1rem ;
+}
+
+.btn > div {
+    background-color: #065E7C;
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+
+}
+
+.container p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+}
+
+.btn img {
+    width: 100%;
+    padding: 12px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: max-content max-content;
+     row-gap: 32px;
+    align-content: center;
+    margin-bottom: 3.9rem;
+}
+
+.gallery h5,
+.gallery p {
+    padding-left: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 1.6rem;
+    background: #387E96;
+}
+
+@media (min-width: 720px) {
+
+    .page {
+        width: 100vw;
+        min-width: 1330px;
+        margin: auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 80.3rem 1fr;
+        grid-template-rows: max-content 61.5rem;
+        column-gap: 3.4rem;
+    }
+
+    .painel {
+        border-radius: 4px;
+    }
+
+    #sub-title  {
+        align-items: center;
+        padding-bottom: 3.2rem;
+    }
+
+    .col-2 {
+        max-width: 850px;
+    }
+
+    .btn {
+        padding: 0;
+    }
+
+    #sub-title {
+        display: flex;
+    }
+
+    #sub-title h2 {
+        flex: 1;
+    }
+
+    .container h2:nth-child(1) {
+        padding-top: 0;
+    }
+
+     .container {
+        width: 100%;
+        text-align: justify;
+        padding: 0;
+    }
+
+    .col-1 {
+        padding-left: 10.9rem;
+        padding-top: 4.4rem;
+    }
+
+    .col-1 img {
+        margin-bottom: 3.2rem;
+    }
+
+    .col-2 {
+        padding-right: 10.2rem;
+        padding-top: 4.4rem;
+        max-height: 56.6rem;
+        text-align: justify;
+    }
+
+    .col-2 h2 {
+        padding-bottom: 3.2rem;
+    }
+
+    #foot {
+        margin-left: 10.9rem;
+    } 
+
+    .avatar {
+        margin-right: 10.9rem;
+    } 
+
+}
